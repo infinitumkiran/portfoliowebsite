@@ -587,7 +587,17 @@ a, a:hover {
   transition: all .3s;
 }
 
-
+.myprojects{
+  margin-left: 30%;
+  margin-right: 30%;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 1000;
+  font-size: x-large;
+  color:#1980ce;
+  text-align:center;
+  animation: flicker 3s infinite linear alternate;
+}
 
 
 
@@ -692,14 +702,14 @@ a, a:hover {
     line-height: 200px;
     font-size: 50px;
     text-align: center;
-    -webkit-box-shadow: 0 0 8px #fff;
-            box-shadow: 0 0 8px #fff;
+    -webkit-box-shadow: 0 0 8px cyan;
+            box-shadow: 0 0 8px cyan;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
   }
   
   #drag-container img:hover, #drag-container video:hover {
-    -webkit-box-shadow: 0 0 15px #fffd;
-            box-shadow: 0 0 15px #fffd;
+    -webkit-box-shadow: 0 0 15px cyan;
+            box-shadow: 0 0 15px cyan;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
   }
   
@@ -763,3 +773,11 @@ a, a:hover {
               transform: rotateY(0deg);
     }
   }
+
+
+
+
+
+
+
+  
