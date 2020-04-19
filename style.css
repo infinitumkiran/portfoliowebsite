@@ -616,7 +616,7 @@ a, a:hover {
     left: 10px;
     top: 10px;
     background: black;
-    overflow: hidden;
+   
     border: solid 5px black;
 }
 #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
@@ -657,7 +657,7 @@ a, a:hover {
   
   .containerbody {
     height: 100%;
-    overflow: hidden;
+  
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
