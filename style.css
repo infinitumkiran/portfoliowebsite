@@ -217,7 +217,7 @@ canvas{
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 html {
   position: relative;
-  overflow-x: hidden !important;
+  
 }
 
 * {
@@ -288,7 +288,7 @@ a, a:hover {
   margin-right: auto;
   transform: translateY(-50%);
   border-radius: 50%;
-  overflow: hidden;
+ 
   position: relative;
   z-index: 4;
   box-shadow: 0px 5px 50px 0px cyan, 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
@@ -616,7 +616,7 @@ a, a:hover {
     left: 10px;
     top: 10px;
     background: black;
-    overflow: hidden;
+ 
     border: solid 5px black;
 }
 #carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
@@ -657,7 +657,7 @@ a, a:hover {
   
   .containerbody {
     height: 100%;
-    overflow: hidden;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -667,6 +667,7 @@ a, a:hover {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
+
   
   #drag-container, #spin-container {
     position: relative;
@@ -691,14 +692,14 @@ a, a:hover {
     line-height: 200px;
     font-size: 50px;
     text-align: center;
-    -webkit-box-shadow: 0 0 8px cyan;
-            box-shadow: 0 0 8px cyan;
+    -webkit-box-shadow: 0 0 8px #fff;
+            box-shadow: 0 0 8px #fff;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
   }
   
   #drag-container img:hover, #drag-container video:hover {
-    -webkit-box-shadow: 0 0 15px cyan;
-            box-shadow: 0 0 15px cyan;
+    -webkit-box-shadow: 0 0 15px #fffd;
+            box-shadow: 0 0 15px #fffd;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
   }
   
@@ -723,7 +724,11 @@ a, a:hover {
     background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
   }
   
-  
+  #music-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
   @-webkit-keyframes spin {
     from{
@@ -762,9 +767,3 @@ a, a:hover {
               transform: rotateY(0deg);
     }
   }
-  
-  
-  
-  
-  
-  
