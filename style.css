@@ -239,6 +239,24 @@ a, a:hover {
   fill: currentColor;
 }
 
+.wrapper {
+  width: 100%;
+
+  height: max-content;
+  min-height: 100vh;
+  padding-top: 30px;
+  background-image: url(images/aboutme.jpg);
+  background-size: cover;
+
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: max-content;
+    width: fit-content;
+    min-height: 100vh;
+    background-image: url(images/aboutme.jpg);
+  }
+}
 
 .profile-card {
   width: 100%;
@@ -625,18 +643,22 @@ a, a:hover {
 
 
 
-  
+  * {
+    margin: 0;
+    padding: 0;
+  }
   
   html,
   body {
     height: 100%;
-    
+    /* for touch screen */
+    touch-action: none; 
   }
   
   .containerbody {
     height: 100%;
     overflow: hidden;
- 
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
  
@@ -673,7 +695,12 @@ a, a:hover {
             box-shadow: 0 0 8px cyan;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
   }
- 
+  
+  #drag-container img:hover, #drag-container video:hover {
+    -webkit-box-shadow: 0 0 15px cyan;
+            box-shadow: 0 0 15px cyan;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+  }
   
   #drag-container p {
     font-family: Serif;
