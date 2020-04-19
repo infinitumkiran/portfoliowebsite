@@ -876,7 +876,7 @@
 
     var bgMusicURL =
       null;
-    var bgMusicControls = true; // Show UI music control
+    var bgMusicControls = true ; // Show UI music control
 
     // You can change global variables here:
     var radius = 240; // how big of the radius
@@ -886,7 +886,14 @@
     var imgHeight = 170; // height of images (unit: px)
 
     // Link of background music - set 'null' if you dont want to play background music
-  
+    if (bgMusicURL) {
+      document.getElementById('music-container').innerHTML += `
+<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+`;
+    }
+
 
     /*
          NOTE:
@@ -901,7 +908,6 @@
     // animation start after 1000 miliseconds
     setTimeout(init, 1000);
 
-    var odrag = document.getElementById('drag-container');
     var ospin = document.getElementById('spin-container');
     var aImg = ospin.getElementsByTagName('img');
     var aVid = ospin.getElementsByTagName('video');
