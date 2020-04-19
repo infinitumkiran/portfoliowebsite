@@ -652,12 +652,12 @@ a, a:hover {
   body {
     height: 100%;
     /* for touch screen */
-    touch-action: none; 
+    
   }
   
   .containerbody {
     height: 100%;
-  
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
