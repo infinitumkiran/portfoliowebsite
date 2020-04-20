@@ -8,13 +8,15 @@
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
 
   <title>MyPortfoliowebsite</title>
 </head>
 
 <body>
   <div id="blah" class="nthg">
-    <canvas id="c"></canvas>
+    <canvas id="c" style="background-color: black;"></canvas>
     <section id="arc">
 
       <div class="fullpage-wrapper">
@@ -37,6 +39,9 @@
       </div>
 
     </section>
+  </div>
+  <div class="myprojects" >
+    <h2>My Projects</h2>
   </div>
   <div class="wrapper">
 
@@ -220,11 +225,7 @@
 
     </defs>
   </svg>
-  <div id="projects" class="myprojects" >
-    <h1>My Projects</h1>
-    
 
-  </div>
   <div class="containerbody">
     <div id="drag-container">
       <div id="spin-container">
@@ -269,14 +270,46 @@
         <!-- Example add video  -->
 
         <!-- Text at center of ground -->
-        <p>My Projects</p>
+        <p></p>
       </div>
       <div id="ground"></div>
     </div>
 
 
   </div>
+  
 
+
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li><i class="icon ion-android-call"></i><a href="#">+91 9441622267</a></li>
+                        <li><i class="icon ion-android-drafts"></i><a href="#">kiransaiabhi@gmail.com</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Independent Developer</h3>
+                    <p>Im Currently available to do any projects,be part of a team project or help you to complete your project.If you just wanna say hi or need anything message me on instagram or dm me on whatsapp.</p>
+                </div>
+                <div class="col item social"><a href="https://www.facebook.com/kiransaiabhishek.ganugula"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/infinity_kiran/"><i class="icon ion-social-instagram"></i></a><a href="https://github.com/kiransaiabhishek"><i class="icon ion-social-github"></i></a><a href="https://www.linkedin.com/in/kiran-sai-abhishek-ganugula-b11882192/"><i class="icon ion-social-linkedin"></i></a></div>
+            </div>
+            <p class="copyright">@Copyrights G.KiranSaiAbhishek © 2020</p>
+        </div>
+    </footer>
+</div>
   
   <script>
     var messageBox = document.querySelector('.js-message');
