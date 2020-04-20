@@ -363,6 +363,7 @@ a, a:hover {
   color: #1980ce;
 }
 .profile-card-inf__txt {
+  font-size: 20px;
   font-weight: 500;
   margin-top: 7px;
 }
