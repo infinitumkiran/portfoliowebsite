@@ -235,8 +235,8 @@ a, a:hover {
   width: 1em;
   height: 1em;
   stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+  stroke: white;
+  fill: white;
 }
 
 .wrapper {
@@ -452,7 +452,7 @@ a, a:hover {
   font-size: 19px;
   margin: 15px 35px;
   padding: 15px 40px;
-  min-width: 201px;
+  min-width: 145px;
   border-radius: 50px;
   min-height: 55px;
   color: #fff;
@@ -462,7 +462,7 @@ a, a:hover {
 }
 @media screen and (max-width: 768px) {
   .profile-card__button {
-    min-width: 170px;
+    min-width: 110px;
     margin: 15px 25px;
   }
 }
@@ -472,7 +472,7 @@ a, a:hover {
     margin: 0;
     margin-bottom: 16px;
     width: 100%;
-    max-width: 300px;
+    max-width: 240px;
   }
   .profile-card__button:last-child {
     margin-bottom: 0;
