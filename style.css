@@ -229,6 +229,14 @@ html {
 a, a:hover {
   text-decoration: none;
 }
+.icon1 {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: black;
+  fill: black;
+}
 
 .icon {
   display: inline-block;
