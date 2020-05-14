@@ -4,6 +4,7 @@ body {
     margin: 0;
   }
 canvas{
+    background-color: transparent;
     position: fixed;
     top: 0;
     right: 0;
@@ -12,16 +13,34 @@ canvas{
     margin: auto;
     width: 100%;
     height: 100%;
+    
 }
-
+.row{
+  z-index: 99;
+  background-color: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1));
+}
 
 /* /pagestyle ends here/  
 /neon name starts here/ */
-
 @font-face {
   font-family: neon;
   src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
+
+.neon {
+  
+  text-align: center  ;
+  font-family: neon;
+  color: cyan;
+
+  text-shadow: 0 0 3vw cyan;
+  margin-bottom: 0px;
+}
+.text-responsive{
+  font-size: x-large;
+}
+
+/* 
 
 .heading{
   font-size: x-large;
@@ -31,13 +50,7 @@ canvas{
   color: cyan;
 }
 
-.neon {
-  font-family: neon;
-  color: cyan;
-  font-size: 5vw;
-  line-height: 5vw;
-  text-shadow: 0 0 3vw cyan;
-}
+
 .neon {
   animation: neon 1s ease infinite;
   -moz-animation: neon 1s ease infinite;
@@ -56,7 +69,7 @@ canvas{
     text-shadow: 0 0 .5vw #08f, 0 0 1.5vw #08f, 0 0 5vw #08f, 0 0 5vw #08f, 0 0 .2vw #08f, .5vw .5vw .1vw #40340A;
     color: #08f;
   }
-}
+} */
 /* /neon name ends here/ */
   :root {
     /* Base font size */
@@ -99,22 +112,49 @@ canvas{
       }    
   }
 
+.legacy{
+  font-weight: 700;
+  font-size: 30px;
+  color: #1980ce;
+  margin-bottom: 15px;
+  
+}
+.center{
+  position: center;
+}
+
 .fullpage-wrapper {
   width: 100%;
   height: 100vh;
   position: center;
+ 
 
-  
-  display: flex;
+}
+.splitscreen {
+  position: center;
+  display:flex;
+}
+.splitscreen .left {
+  flex: 0.5;
+}
+.splitscreen .right {
+  flex: 1;
 }
 .reactor-container {
+  
+  opacity: 0.4;
   width:250px;
   height: 250px;
   margin: auto;
   border: 1px dashed #888;
-  position: relative;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
   border-radius: 50%;
+  background-position: center;
   background-color: #384c50;
+  background-size: cover;
   border: 1px solid rgb(18, 20, 20);
   box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
 }
@@ -255,13 +295,17 @@ a, a:hover {
   padding-top: 30px;
   background-image: url(images/aboutme.jpg);
   background-size: cover;
+  margin-bottom: 120px;
 
 }
+
 @media screen and (max-width: 768px) {
+
   .wrapper {
     height: max-content;
     width: fit-content;
     min-height: 100vh;
+    margin-bottom: 110px;
     background-image: url(images/aboutme.jpg);
   }
 }
@@ -275,7 +319,7 @@ a, a:hover {
   box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
   background: #fff;
   border-radius: 12px;
-  max-width: 500px;
+  max-width: 550px;
   position: relative;
 }
 
@@ -302,6 +346,7 @@ a, a:hover {
   box-shadow: 0px 5px 50px 0px cyan, 0px 0px 0px 7px rgba(107, 74, 255, 0.5);
 }
 @media screen and (max-width: 576px) {
+
   .profile-card__img {
     width: 120px;
     height: 120px;
@@ -603,20 +648,24 @@ a, a:hover {
   font-family: 'Quicksand', sans-serif;
   font-weight: 1000;
   font-size: x-large;
-  color:cyan;
   text-align:center;
-  animation: flicker 3s infinite linear alternate;
 }
 
-
+.namecontainer{
+ 
+  
+  perspective: 1000px;
+  text-align: center;
+}
 
 .container{
+    z-index: 2;
     margin: 4% auto;
-    width: 210px;
-    height: 140px;
     position: relative;
     perspective: 1000px;
 }
+
+
 #carousel{
     width: 100%;
     height: 100%;
